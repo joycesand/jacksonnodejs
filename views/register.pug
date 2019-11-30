@@ -1,0 +1,45 @@
+extends layout.pug
+block content  
+    div.row.justify-content-center                        
+        form(method='POST' action='/addUser')
+            div.form-row 
+                div.col.form-group 
+                    label User Name
+                    input.form-control(name='username')
+                div.col.form-group 
+                    label Last Name
+                    input.form-control(name='lastname')
+            div.form.row
+                div.col.form-group 
+                    label Email Address
+                    input.form-control(name='emailaddress')
+            div.form.row
+                div.col.form-group
+                    label.form-check.form-check-inline
+                        input.form-check-input(type='radio' name='gender' value='Female')
+                        span.form-check-label Female   
+                    label.form-check.form-check-inline
+                        input(type='radio' name='gender' value='Male')
+                        span.form-check-label Male 
+            div.form-row 
+                div.col.form-group 
+                    label Country
+                    select.form-control(name='Country') 
+                        option(value="Uganda") Uganda
+                div.col.form-group 
+                    label City
+                    select.form-control(name='city') 
+                        option(value="Mbarara") Mbarara
+                        option(value="Kampala") Kampala
+                        option(value="Mbale") Mbale
+                        option(value="Gulu") Gulu
+            div.form.row
+                div.col.form-group 
+                    label Password
+                    input.form-control(name='password')
+            div.form.row 
+                div.col.form-group 
+                    button.btn.btn-primary.btn-block Register
+
+        
+                            

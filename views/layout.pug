@@ -1,0 +1,36 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Registred Files
+        link(rel="stylesheet", href="../custom.css")
+        link(rel="stylesheet", href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css")
+        
+
+    body
+        block top
+            div.container-fluid
+                div.card-body 
+                    header.card-header 
+                
+                        h4.card-title Registered Form 
+        block content
+        form(action="/uploadfile" enctype="multipart/form-data" method="POST")
+            input(type="file" name="myFile")
+            input(type="submit" value="Upload your file")
+        form(action="/uploadmultiple" enctype="multipart/form-data" method="POST")
+            input(type="file" name="myFiles" multiple)
+            input(type="submit" value="Upload files")
+        form(action="/uploadphoto" enctype="multipart/form-data" method="POST")
+            input(type="file" name="myImage" accept="image/*")
+            input(type="submit" value="Upload Photo")
+        block footer
+            div.footer
+                div.container-fluid
+                    div.card-body 
+
+                        header.card-footer
+                            p Sandra@RefactoryUg 
+

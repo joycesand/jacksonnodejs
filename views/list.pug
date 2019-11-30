@@ -1,0 +1,23 @@
+extends layout.pug
+
+block content
+
+    table.table
+        thead.thead-dark 
+            tr
+                th Firstname
+                th Lastname
+                th Email-Address
+                th Gender
+                th Country
+                th City
+
+        tbody
+            each user in users
+                tr 
+                    td #{user.firstname}
+                    td #{user.lastname}
+                    td #{user.emailaddress}
+                    td #{user.gender}
+                    td #{user.country}
+                    td #{user.city}

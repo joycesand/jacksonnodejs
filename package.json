@@ -1,0 +1,21 @@
+{
+  "name": "jacksonnodejs",
+  "version": "1.0.0",
+  "description": "my node js coaching",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sandra",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^5.7.12",
+    "path": "^0.12.7",
+    "pug": "^2.0.4"
+  },
+  "devDependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^1.19.4"
+  }
+}
